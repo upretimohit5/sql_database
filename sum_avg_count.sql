@@ -36,9 +36,17 @@ group by ProductID,StoreID
 
 select * from dbo.Sales
 
-select 
+select count(*) [number of rows] from dbo.sales
 
+select count(paymentmethod) [No of Records] from dbo.Sales
 
+select count(distinct productid) [distinct products] from dbo.sales
 
+select paymentmethod,count(distinct paymentmethod) [distinct payments] from dbo.sales
+group by PaymentMethod
 
+select paymentmethod,count(paymentmethod) [distinct payments] from dbo.sales
+group by PaymentMethod
 
+select paymentmethod,count(*) [distinct payments] from dbo.sales
+group by PaymentMethod
