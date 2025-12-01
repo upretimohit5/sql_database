@@ -1,0 +1,28 @@
+
+
+-- Create Employees_us table
+CREATE TABLE Employees_US (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
+-- Insert sample data into Employees table
+INSERT INTO Employees_us (EmployeeID, FirstName, LastName, Department) VALUES
+(1, 'Alice', 'Smith', 'Finance'),
+(2, 'Bob', 'Johnson', 'Engineering'),
+(3, 'Charlie', 'Williams', 'Marketing'),
+(4, 'Diana', 'Brown', 'Finance'),
+(5, 'Edward', 'Jones', 'Engineering'),
+(6, 'Fiona', 'Garcia', 'Marketing'),
+(7, 'George', 'Miller', 'Finance'),
+(8, 'Hannah', 'Wilson', 'Engineering');
+
+select * from employees_US
+
+
+-- wildcards fo like operator
+
+-- 1) % may represent 0,1 or multiple character
+-- 2) _ exactly represent only one character
