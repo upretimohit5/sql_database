@@ -9,6 +9,10 @@ First_value(salary) over(order by salary asc) [Minimum Salary]
 from EmployeeSalaries
 
 select *,
+First_value(EmployeeName) over(order by salary asc) [Minimum Salary]
+from EmployeeSalaries
+
+select *,
 First_value(employeename) over(order by salary asc) [Minimum Salary Employee],
 First_value(salary) over(order by salary asc) [Minimum Salary]
 from EmployeeSalaries
